@@ -16,7 +16,7 @@
 
 ---
 
-## Phase 2: Core Hardware Modules (Verilog HDL)
+## Phase 2: Core Hardware Modules (HDL)
 
 - [ ] **Program Counter (PC):** 32-bit register holding the current instruction address.
 - [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
