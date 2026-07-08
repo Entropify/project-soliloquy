@@ -1,3 +1,55 @@
-indev now (researching...)
+# Project Checklist
 
-;)
+## Phase 1: Architecture & Theory
+
+- [ ] **Chapter 2: Instructions (Language of the Computer)**
+  - [ ] 2.2: Operations
+  - [ ] 2.3: Operands
+  - [ ] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
+  - [ ] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
+  - [ ] 2.6: Logical Operations
+  - [ ] 2.7: Instructions for Making Decisions
+- [ ] **Chapter 4: The Processor**
+  - [ ] 4.1 & 4.2: Datapath overview and Logic Design Conventions
+  - [ ] 4.3: Building a Datapath
+  - [ ] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
+
+---
+
+## Phase 2: Core Hardware Modules (Verilog HDL)
+
+- [ ] **Program Counter (PC):** 32-bit register holding the current instruction address.
+- [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
+- [ ] **Register File:** 32x32-bit registers. 
+- [ ] **ALU (Arithmetic Logic Unit):** Core execution unit.
+  - [ ] Implement operations: `ADD`, `SUB`, `AND`, `OR`, `XOR`, `SLL`, `SRL`, `SRA`, `SLT`, `SLTU`.
+- [ ] **Immediate Generator (ImmGen):** Extracts and sign-extends immediates based on the instruction format (I, S, B, U, J types).
+- [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions.
+- [ ] **Adders:**
+  - [ ] PC + 4 Adder (Next sequential instruction).
+  - [ ] Branch Target Adder (PC + Offset).
+
+---
+
+## Phase 3: Control Logic & Integration
+
+- [ ] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`).
+- [ ] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALU operation.
+- [ ] **Top-Level Module (`cpu.v`):** Instantiate and wire all components together (PC, Memories, RegFile, ALU, Controllers, and Muxes).
+
+---
+
+## Phase 4: Hardware Verification & Testing
+*Ensuring the architecture behaves correctly via testbenches.*
+
+- [ ] **Module-Level Unit Testing:**
+  - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag).
+  - [ ] Register File Testbench (Verify write behavior and `x0` isolation).
+  - [ ] ImmGen Testbench (Verify sign-extension across all instruction formats).
+- [ ] **Integration Testing:**
+  - [ ] Datapath signal verification (Ensure multiplexers route correct data).
+- [ ] **Full System Execution (Assembly):**
+  - [ ] Write a basic RISC-V assembly program (e.g., Fibonacci sequence or a loop counter).
+  - [ ] Assemble program into hex machine code.
+  - [ ] Load hex into Instruction Memory.
+  - [ ] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave).
