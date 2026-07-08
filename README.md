@@ -40,7 +40,6 @@
 ---
 
 ## Phase 4: Hardware Verification & Testing
-*Ensuring the architecture behaves correctly via testbenches.*
 
 - [ ] **Module-Level Unit Testing:**
   - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag).
