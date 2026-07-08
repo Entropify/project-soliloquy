@@ -1,3 +1,3 @@
-indev
-soon
+indev now (researching...)
+
 ;)
