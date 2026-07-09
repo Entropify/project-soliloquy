@@ -3,6 +3,7 @@
 ## Phase 1: Architecture & Theory
 
 - [ ] **Chapter 2: Instructions (Language of the Computer)**
+  - [ ] 2.1: Introductions
   - [ ] 2.2: Operations
   - [ ] 2.3: Operands
   - [ ] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
@@ -10,7 +11,8 @@
   - [ ] 2.6: Logical Operations
   - [ ] 2.7: Instructions for Making Decisions
 - [ ] **Chapter 4: The Processor**
-  - [ ] 4.1 & 4.2: Datapath overview and Logic Design Conventions
+  - [ ] 4.1: Introductions
+  - [ ] 4.2: Design Conventions
   - [ ] 4.3: Building a Datapath
   - [ ] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
 
