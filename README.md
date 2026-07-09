@@ -3,9 +3,9 @@
 ## Phase 1: Architecture & Theory
 
 - [ ] **Chapter 2: Instructions (Language of the Computer)**
-  - [ ] 2.1: Introductions
-  - [ ] 2.2: Operations
-  - [ ] 2.3: Operands
+  - [x] 2.1: Introductions
+  - [x] 2.2: Operations
+  - [x] 2.3: Operands
   - [ ] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
   - [ ] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
   - [ ] 2.6: Logical Operations
