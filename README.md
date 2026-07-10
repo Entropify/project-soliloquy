@@ -21,11 +21,11 @@
 ## Phase 2: Core Hardware Modules (HDL)
 
 - for now:
-add, sub — ALU, R-type decode, register writeback
-and, or — ALU logical ops (different funct3, same R-type structure)
-lw — I-type decode, memory read, sign-extend immediate, ALU for address calc, register writeback from memory (not ALU)
-sw — S-type decode, split immediate reconstruction, memory write, no register writeback at all
-beq — B-type decode, branch comparator, PC-relative offset, PC mux
+  - add, sub — ALU, R-type decode, register writeback
+  - and, or — ALU logical ops (different funct3, same R-type structure)
+  - lw — I-type decode, memory read, sign-extend immediate, ALU for address calc, register writeback from memory (not ALU)
+  - sw — S-type decode, split immediate reconstruction, memory write, no register writeback at all
+  - beq — B-type decode, branch comparator, PC-relative offset, PC mux
 
 
 - [ ] **Program Counter (PC):** 32-bit register holding the current instruction address.
