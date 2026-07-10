@@ -6,10 +6,10 @@
   - [x] 2.1: Introductions
   - [x] 2.2: Operations
   - [x] 2.3: Operands
-  - [ ] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
-  - [ ] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
-  - [ ] 2.6: Logical Operations
-  - [ ] 2.7: Instructions for Making Decisions
+  - [x] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
+  - [x] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
+  - [x] 2.6: Logical Operations
+  - [x] 2.7: Instructions for Making Decisions
 - [ ] **Chapter 4: The Processor**
   - [ ] 4.1: Introductions
   - [ ] 4.2: Design Conventions
