@@ -2,7 +2,7 @@
 
 ## Phase 1: Architecture & Theory
 
-- [x] **Chapter 2: Instructions (Language of the Computer)**
+- [x] **Chapter 2: Instructions**
   - [x] 2.1: Introductions
   - [x] 2.2: Operations
   - [x] 2.3: Operands
