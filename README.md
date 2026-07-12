@@ -13,7 +13,7 @@
 - [ ] **Chapter 4: The Processor**
   - [x] 4.1: Introductions
   - [x] 4.2: Design Conventions
-  - [ ] 4.3: Building a Datapath
+  - [x] 4.3: Building a Datapath
   - [ ] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
 
 ---
