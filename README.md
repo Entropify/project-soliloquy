@@ -1,8 +1,8 @@
 # Project Checklist
 
-## Phase 1: Architecture & Theory
+## Phase 1: Architecture & Theory (Wrapping up)
 
-- [x] **Chapter 2: Instructions** (Wrapping up)
+- [x] **Chapter 2: Instructions** 
   - [x] 2.1: Introductions
   - [x] 2.2: Operations
   - [x] 2.3: Operands
