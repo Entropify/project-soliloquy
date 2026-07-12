@@ -2,7 +2,7 @@
 
 ## Phase 1: Architecture & Theory
 
-- [x] **Chapter 2: Instructions**
+- [x] **Chapter 2: Instructions** (Wrapping up)
   - [x] 2.1: Introductions
   - [x] 2.2: Operations
   - [x] 2.3: Operands
@@ -18,7 +18,7 @@
 
 ---
 
-## Phase 2: Core Hardware Modules (HDL)
+## Phase 2: Core Hardware Modules (HDL) (WIP)
 
 - for now:
   - add, sub — ALU, R-type decode, register writeback
