@@ -52,13 +52,13 @@
 ## Phase 4: Hardware Verification & Testing
 
 - [ ] **Module-Level Unit Testing:**
-  - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag).
-  - [ ] Register File Testbench (Verify write behavior and `x0` isolation).
-  - [ ] ImmGen Testbench (Verify sign-extension across all instruction formats).
+  - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
+  - [ ] Register File Testbench (Verify write behavior and `x0` isolation)
+  - [ ] ImmGen Testbench (Verify sign-extension across all instruction formats)
 - [ ] **Integration Testing:**
-  - [ ] Datapath signal verification (Ensure multiplexers route correct data).
+  - [ ] Datapath signal verification (Ensure multiplexers route correct data)
 - [ ] **Full System Execution (Assembly):**
-  - [ ] Write a basic RISC-V assembly program (e.g., Fibonacci sequence or a loop counter).
-  - [ ] Assemble program into hex machine code.
-  - [ ] Load hex into Instruction Memory.
-  - [ ] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave).
+  - [ ] Write a basic RISC-V assembly program (e.g., Fibonacci sequence or a loop counter)
+  - [ ] Assemble program into hex machine code
+  - [ ] Load hex into Instruction Memory
+  - [ ] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave)
