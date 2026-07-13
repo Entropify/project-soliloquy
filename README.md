@@ -20,7 +20,7 @@
 
 ## Phase 2: Core Hardware Modules (WIP)
 
-- for now:
+- for now (MVP of Rv32I):
   - add, sub — ALU, R-type decode, register writeback
   - and, or — ALU logical ops (different funct3, same R-type structure)
   - lw — I-type decode, memory read, sign-extend immediate, ALU for address calc, register writeback from memory (not ALU)
@@ -31,13 +31,16 @@
 - [x] **Program Counter (PC):** 32-bit register holding the current instruction address.
 - [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
 - [x] **Register File:** 32x32-bit registers. 
-- [x] **ALU (Arithmetic Logic Unit):** Core execution unit.
+- [x] **ALU:** Core execution unit.
   - [x] Implement operations: `ADD`, `SUB`, `AND`, `OR`
 - [ ] **Immediate Generator (ImmGen):** Extracts and sign-extends immediates based on the instruction format (I, S, B types).
 - [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions.
 - [ ] **Adders:**
   - [ ] PC + 4 Adder (Next sequential instruction).
   - [ ] Branch Target Adder (PC + Offset).
+- [ ] **Top Level Mux Logic**
+- [ ] **ALU Control Unit**
+- [ ] **Control Unit**
 
 ---
 
