@@ -28,27 +28,24 @@
   - beq — B-type decode, branch comparator, PC-relative offset, PC mux
 
 
-- [x] **Program Counter (PC):** 32-bit register holding the current instruction address.
-- [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
-- [x] **Register File:** 32x32-bit registers. 
-- [x] **ALU:** Core execution unit.
+- [x] **Program Counter (PC):** 32-bit register holding the current instruction address
+- [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code
+- [x] **Register File:** 32x32-bit registers
+- [x] **ALU:** Core execution unit
   - [x] Implement operations: `ADD`, `SUB`, `AND`, `OR`
-- [ ] **Immediate Generator (ImmGen):** Extracts, shifts or sign-extends immediates based on the instruction format (I, S, B types).
-- [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions.
+- [ ] **Immediate Generator (ImmGen):** Extracts, shifts or sign-extends immediates based on the instruction format (I, S, B types)
+- [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions
 - [ ] **Adders:**
-  - [ ] PC + 4 Adder (Next sequential instruction).
-  - [ ] Branch Target Adder (PC + Offset).
-- [ ] **Top Level Multiplexer Logic, Wiring, I/Os**
-- [ ] **ALU Control Unit**
-- [ ] **Control Unit**
+  - [ ] PC + 4 Adder (Next sequential instruction)
+  - [ ] Branch Target Adder (PC + Offset)
 
 ---
 
 ## Phase 3: Control Logic & Integration
 
-- [ ] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`).
-- [ ] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALU operation.
-- [ ] **Top-Level Module (`cpu.v`):** Instantiate and wire all components together (PC, Memories, RegFile, ALU, Controllers, and Muxes).
+- [ ] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`)
+- [ ] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALU operation
+- [ ] **Top-Level Module:** Instantiate and wire all components together (PC, Memories, RegFile, ALU, Controllers, and Muxes)
 
 ---
 
