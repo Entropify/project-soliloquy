@@ -38,7 +38,7 @@
 - [ ] **Adders:**
   - [ ] PC + 4 Adder (Next sequential instruction).
   - [ ] Branch Target Adder (PC + Offset).
-- [ ] **Top Level Multiplexer Logic**
+- [ ] **Top Level Multiplexer Logic, Wiring, I/Os**
 - [ ] **ALU Control Unit**
 - [ ] **Control Unit**
 
