@@ -1,6 +1,6 @@
 # Project Checklist
 
-## Phase 1: Architecture & Theory (Wrapping up)
+## Phase 1: Architecture & Theory (Done)
 
 - [x] **Chapter 2: Instructions** 
   - [x] 2.1: Introductions
@@ -10,15 +10,15 @@
   - [x] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
   - [x] 2.6: Logical Operations
   - [x] 2.7: Instructions for Making Decisions
-- [ ] **Chapter 4: The Processor**
+- [x] **Chapter 4: The Processor**
   - [x] 4.1: Introductions
   - [x] 4.2: Design Conventions
   - [x] 4.3: Building a Datapath
-  - [ ] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
+  - [x] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
 
 ---
 
-## Phase 2: Core Hardware Modules (HDL) (WIP)
+## Phase 2: Core Hardware Modules (WIP)
 
 - for now:
   - add, sub — ALU, R-type decode, register writeback
@@ -32,8 +32,8 @@
 - [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
 - [ ] **Register File:** 32x32-bit registers. 
 - [ ] **ALU (Arithmetic Logic Unit):** Core execution unit.
-  - [ ] Implement operations: `ADD`, `SUB`, `AND`, `OR`, `XOR`, `SLL`, `SRL`, `SRA`, `SLT`, `SLTU`.
-- [ ] **Immediate Generator (ImmGen):** Extracts and sign-extends immediates based on the instruction format (I, S, B, U, J types).
+  - [ ] Implement operations: `ADD`, `SUB`, `AND`, `OR`
+- [ ] **Immediate Generator (ImmGen):** Extracts and sign-extends immediates based on the instruction format (I, S, B types).
 - [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions.
 - [ ] **Adders:**
   - [ ] PC + 4 Adder (Next sequential instruction).
