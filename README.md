@@ -20,7 +20,7 @@
 
 ## Phase 2: Core Hardware Modules (WIP)
 
-- for now (MVP of Rv32I):
+- for now (MVP of RV32I):
   - add, sub — ALU, R-type decode, register writeback
   - and, or — ALU logical ops (different funct3, same R-type structure)
   - lw — I-type decode, memory read, sign-extend immediate, ALU for address calc, register writeback from memory (not ALU)
