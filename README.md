@@ -28,11 +28,11 @@
   - beq — B-type decode, branch comparator, PC-relative offset, PC mux
 
 
-- [ ] **Program Counter (PC):** 32-bit register holding the current instruction address.
+- [x] **Program Counter (PC):** 32-bit register holding the current instruction address.
 - [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code.
-- [ ] **Register File:** 32x32-bit registers. 
-- [ ] **ALU (Arithmetic Logic Unit):** Core execution unit.
-  - [ ] Implement operations: `ADD`, `SUB`, `AND`, `OR`
+- [x] **Register File:** 32x32-bit registers. 
+- [x] **ALU (Arithmetic Logic Unit):** Core execution unit.
+  - [x] Implement operations: `ADD`, `SUB`, `AND`, `OR`
 - [ ] **Immediate Generator (ImmGen):** Extracts and sign-extends immediates based on the instruction format (I, S, B types).
 - [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions.
 - [ ] **Adders:**
