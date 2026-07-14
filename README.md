@@ -33,7 +33,7 @@
 - [x] **Register File:** 32x32-bit registers
 - [x] **ALU:** Core execution unit
   - [x] Implement operations: `ADD`, `SUB`, `AND`, `OR`
-- [ ] **Immediate Generator (ImmGen):** Extracts, shifts or sign-extends immediates based on the instruction format (I, S, B types)
+- [x] **Immediate Generator (ImmGen):** Extracts, shifts or sign-extends immediates based on the instruction format (I, S, B types)
 - [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions
 - [ ] **Adders:**
   - [ ] PC + 4 Adder (Next sequential instruction)
