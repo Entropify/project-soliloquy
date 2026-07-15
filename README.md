@@ -18,7 +18,7 @@
 
 ---
 
-## Phase 2: Core Hardware Modules (WIP)
+## Phase 2: Core Hardware Modules (Done)
 
 - for now (MVP of RV32I):
   - add, sub — ALU, R-type decode, register writeback
@@ -29,27 +29,27 @@
 
 
 - [x] **Program Counter (PC):** 32-bit register holding the current instruction address
-- [ ] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code
+- [x] **Instruction Memory (ROM):** Asynchronous read memory initialized with compiled machine code
 - [x] **Register File:** 32x32-bit registers
 - [x] **ALU:** Core execution unit
   - [x] Implement operations: `ADD`, `SUB`, `AND`, `OR`
 - [x] **Immediate Generator (ImmGen):** Extracts, shifts or sign-extends immediates based on the instruction format (I, S, B types)
-- [ ] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions
-- [ ] **Adders:**
-  - [ ] PC + 4 Adder (Next sequential instruction)
-  - [ ] Branch Target Adder (PC + Offset)
+- [x] **Data Memory (RAM):** Synchronous write, asynchronous read for `Load` and `Store` instructions
+- [x] **Adders:**
+  - [x] PC + 4 Adder (Next sequential instruction)
+  - [x] Branch Target Adder (PC + Offset)
 
 ---
 
-## Phase 3: Control Logic & Integration
+## Phase 3: Control Logic & Integration (Done)
 
-- [ ] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`)
-- [ ] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALUop signals
-- [ ] **Top-Level Module:** Instantiate and wire all components together (PC, Memories, RegFile, ALU, Controllers, and Muxes)
+- [x] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`)
+- [x] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALUop signals
+- [x] **Top-Level Module:** Instantiate and wire all components together (PC, Memories, RegFile, ALU, Controllers, and Muxes)
 
 ---
 
-## Phase 4: Hardware Verification & Testing
+## Phase 4: Hardware Verification & Testing (WIP)
 
 - [ ] **Module-Level Unit Testing:**
   - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
