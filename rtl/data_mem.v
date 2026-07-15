@@ -12,7 +12,7 @@
     input wire mem_read,
     input wire [31:0] address,
     input wire [31:0] write_data,
-    input wire [31:0] read_data
+    output wire [31:0] read_data
  );
 
 reg [31:0] ram [0:1023];
