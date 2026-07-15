@@ -6,11 +6,11 @@
 `default_nettype none
 
  module alu (
-    input [31:0] data_1,
-    input [31:0] data_2,
-    input [3:0] alu_control,
+    input wire [31:0] data_1,
+    input wire [31:0] data_2,
+    input wire [3:0] alu_control,
     output reg [31:0] alu_result,
-    output zero
+    output wire zero
  );
 
  always @(*) begin

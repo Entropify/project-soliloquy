@@ -6,7 +6,7 @@
 `default_nettype none
 
  module imm_gen (
-    input [31:0] instruction_in,
+    input wire [31:0] instruction_in,
     output reg [31:0] imm_gen_out
  );
 

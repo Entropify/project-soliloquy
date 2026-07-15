@@ -6,9 +6,9 @@
 `default_nettype none
 
  module pc (
-    input clk,
-    input rst_n,
-    input [31:0] pc_in,
+    input wire clk,
+    input wire rst_n,
+    input wire [31:0] pc_in,
     output reg [31:0] pc_out
  );
 

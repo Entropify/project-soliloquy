@@ -6,15 +6,15 @@
 `default_nettype none
 
  module reg_file (
-    input clk,
-    input rst_n,
-    input [4:0] rs1_address,
-    input [4:0] rs2_address,
-    input [4:0] rd_address,
-    input [31:0] write_data,
-    input reg_write,
-    output [31:0] rs1_data,
-    output [31:0] rs2_data
+    input wire clk,
+    input wire rst_n,
+    input wire [4:0] rs1_address,
+    input wire [4:0] rs2_address,
+    input wire [4:0] rd_address,
+    input wire [31:0] write_data,
+    input wire reg_write,
+    output wire [31:0] rs1_data,
+    output wire [31:0] rs2_data
  );
 
  reg [31:0] internal_reg [0:31];
