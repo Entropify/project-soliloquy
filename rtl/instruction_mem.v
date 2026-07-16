@@ -16,7 +16,7 @@ reg [31:0] rom [0:1023];
 
 
 initial begin
-    $readmemh("../tb/tb_program.hex", rom); 
+    $readmemh("../tb/programs/tb_program.hex", rom); 
 end
 
 
