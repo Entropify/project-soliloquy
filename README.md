@@ -51,12 +51,15 @@
 
 ## Phase 4: Hardware Verification & Testing (WIP)
 
-- [ ] **Module-Level Unit Testing:**
-  - [ ] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
-  - [ ] Register File Testbench (Verify write behavior and `x0` isolation)
-  - [ ] ImmGen Testbench (Verify sign-extension across all instruction formats)
-- [ ] **Integration Testing:**
-  - [ ] Datapath signal verification (Ensure multiplexers route correct data)
+- [x] **Module-Level Unit Testing:**
+  - [x] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
+  - [x] Register File Testbench (Verify write behavior and `x0` isolation)
+  - [x] ImmGen Testbench (Verify sign-extension across all instruction formats)
+  - [x] Control Unit Testbench
+  - [x] ALU Control Testbench
+  - [x] PC Testbench
+  - [x] Data Mem Testbench
+  - [x] Instruction Mem Testbench (Ensuring correctly reading hex file)
 - [ ] **Full System Execution (Assembly):**
   - [ ] Write a basic RISC-V assembly program (e.g., Fibonacci sequence or a loop counter)
   - [ ] Assemble program into hex machine code
