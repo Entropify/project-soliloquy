@@ -51,7 +51,7 @@
 
 ## Phase 4: Hardware Verification & Testing (WIP)
 
-- [x] **Module-Level Unit Testing:**
+- [x] **Module-Level Unit Testing (SystemVerilog):**
   - [x] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
   - [x] Register File Testbench (Verify write behavior and `x0` isolation)
   - [x] ImmGen Testbench (Verify sign-extension across all instruction formats)
@@ -60,7 +60,7 @@
   - [x] PC Testbench
   - [x] Data Mem Testbench
   - [x] Instruction Mem Testbench (Ensuring correctly reading hex file)
-- [x] **Full System Execution (Assembly):**
+- [x] **Full System Execution (Cocotb + Makefile + riscvasm compiled into hex):**
   - [x] Write a basic self-checking RISC-V assembly program that works with cocotb to verify CPU
   - [x] Assemble program into hex machine code
   - [x] Load hex into Instruction Memory
