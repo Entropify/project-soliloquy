@@ -1,5 +1,5 @@
 #run make clean then make sim btw future jerry
-# also jerry use gtkwave sim_build/soc_top.fst sim_build/soc_top.gtkw
+# also jerry use gtkwave sim_build/soc_top.fst soc_top.gtkw
 
 # default simulator
 SIM ?= icarus
