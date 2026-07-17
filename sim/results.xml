@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1784265211" />
-    <testcase name="universal_test" classname="tb_top_soc" file="/mnt/x/project-soliloquy/tb/top/tb_top_soc.py" lineno="9" time="0.4900953769683838" sim_time_ns="200.001" ratio_time="408.0858734827489" />
+    <property name="random_seed" value="1784266055" />
+    <testcase name="universal_test" classname="tb_top_soc" file="/mnt/x/project-soliloquy/tb/top/tb_top_soc.py" lineno="9" time="0.02027440071105957" sim_time_ns="200.001" ratio_time="9864.705884544375" />
   </testsuite>
 </testsuites>

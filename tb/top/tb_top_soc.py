@@ -26,7 +26,7 @@ async def universal_test(dut):
     dut._log.info("RAM flushed with 1 @ address 0, 2 @ address 4, 3 @ address 8")
     
     dut.rst_n.value = 1
-    dut._log.info("CPU on. Waiting for program to halt...")
+    dut._log.info("CPU on. Waiting for assembly to reach successful branch")
 
 
     prev_pc = -1
@@ -65,7 +65,7 @@ async def universal_test(dut):
 
 
     
-    assert return_code == 1, f"TEST FAILED: assembly code returned error code: {return_code}"
+    assert return_code == 1, f'TEST FAILED: assembly code returned error code: {return_code}'
 
     
     dut._log.info("Error codes meaning:")
