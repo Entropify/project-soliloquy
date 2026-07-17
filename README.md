@@ -61,7 +61,7 @@
   - [x] Data Mem Testbench
   - [x] Instruction Mem Testbench (Ensuring correctly reading hex file)
 - [x] **Full System Execution (Assembly):**
-  - [x] Write a basic self-checking RISC-V assembly program at works with cocotb to verify CPU
+  - [x] Write a basic self-checking RISC-V assembly program that works with cocotb to verify CPU
   - [x] Assemble program into hex machine code
   - [x] Load hex into Instruction Memory
   - [x] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave)
