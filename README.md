@@ -1,4 +1,4 @@
-# Project Checklist
+# Project Checklist (EVERYTHING DONE!!! UPGRADE TIME)
 
 ## Phase 1: Architecture & Theory (Done)
 
@@ -60,8 +60,8 @@
   - [x] PC Testbench
   - [x] Data Mem Testbench
   - [x] Instruction Mem Testbench (Ensuring correctly reading hex file)
-- [ ] **Full System Execution (Assembly):**
-  - [ ] Write a basic RISC-V assembly program (e.g., Fibonacci sequence or a loop counter)
-  - [ ] Assemble program into hex machine code
-  - [ ] Load hex into Instruction Memory
-  - [ ] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave)
+- [x] **Full System Execution (Assembly):**
+  - [x] Write a basic self-checking RISC-V assembly program that works with cocotb to verify CPU
+  - [x] Assemble program into hex machine code
+  - [x] Load hex into Instruction Memory
+  - [x] Simulate entire CPU clock cycles and verify register states/Data Memory in a waveform viewer (e.g., GTKWave)
