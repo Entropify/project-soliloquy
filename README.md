@@ -49,7 +49,7 @@
 
 ---
 
-## Phase 4: Hardware Verification & Testing (WIP)
+## Phase 4: Hardware Verification & Testing (Done)
 
 - [x] **Module-Level Unit Testing (SystemVerilog):**
   - [x] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
