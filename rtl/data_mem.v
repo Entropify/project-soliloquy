@@ -15,17 +15,17 @@
     output wire [31:0] read_data
  );
 
-reg [31:0] ram [0:1023];
+reg [31:0] mem_array [0:1023];
 
 always @(posedge clk) begin
 
     if (mem_write) begin
-        ram[address[31:2]] <= write_data;
+        mem_array[address[31:2]] <= write_data;
 
     end
 end
 
-assign read_data = (mem_read) ? ram[address[31:2]] : 32'b0;
+assign read_data = (mem_read) ? mem_array[address[31:2]] : 32'b0;
 
  endmodule
  

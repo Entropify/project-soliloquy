@@ -20,6 +20,22 @@
     output wire mem_read
   );
 
+// declaring these here because i need them for module instantiations and i don't want icarus to scream at me :(
+
+  wire [3:0] alu_ctrl_out;
+  wire [31:0] imm_gen_out;
+  wire [31:0] alu_result;
+  wire zero_flag;
+  
+  wire branch;
+  wire mem_to_reg;
+  wire [1:0] alu_op;
+  wire alu_src;
+  wire reg_write;
+
+  wire [31:0] read_data1;
+  wire [31:0] read_data2;
+  wire [31:0] writeback_data;
 
 // pc
 
@@ -27,6 +43,7 @@
   wire [31:0] pc_next;
   wire [31:0] pc_plus_4;
   wire [31:0] pc_branch_target;
+  
 
   assign instr_address = pc_out;
 
@@ -44,11 +61,7 @@
 
 // control unit
 
-  wire branch;
-  wire mem_to_reg;
-  wire [1:0] alu_op;
-  wire alu_src;
-  wire reg_write;
+  
 
   control_unit cpu_control (
     .control_in(instruction[6:0]),
@@ -64,9 +77,7 @@
 
 // reg file
 
-  wire [31:0] read_data1;
-  wire [31:0] read_data2;
-  wire [31:0] writeback_data;
+  
 
   reg_file cpu_reg_file (
     .clk(clk),
@@ -85,7 +96,6 @@
 
 // imm gen
 
-  wire [31:0] imm_gen_out;
 
   imm_gen cpu_imm_gen (
     .instruction_in(instruction),
@@ -95,8 +105,8 @@
 
 // alu
 
-  wire zero_flag;
-  wire [31:0] alu_result;
+  
+  
 
   alu cpu_alu (
     .data_1(read_data1),
@@ -111,7 +121,7 @@
 
 // alu control
 
-  wire [3:0] alu_ctrl_out;
+  
 
   alu_control cpu_alu_ctrl (
     .alu_op(alu_op),
