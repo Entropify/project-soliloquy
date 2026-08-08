@@ -1,24 +1,7 @@
 # Project Checklist (EVERYTHING DONE!!! UPGRADE TIME)
-
-## Phase 1: Architecture & Theory (Done)
-
-- [x] **Chapter 2: Instructions** 
-  - [x] 2.1: Introductions
-  - [x] 2.2: Operations
-  - [x] 2.3: Operands
-  - [x] 2.4: Signed and Unsigned Numbers (Two's Complement handling for ALU)
-  - [x] 2.5: Representing Instructions (Crucial for decoding R, I, S, B, U, and J formats)
-  - [x] 2.6: Logical Operations
-  - [x] 2.7: Instructions for Making Decisions
-- [x] **Chapter 4: The Processor**
-  - [x] 4.1: Introductions
-  - [x] 4.2: Design Conventions
-  - [x] 4.3: Building a Datapath
-  - [x] 4.4: A Simple Implementation Scheme (Single-cycle control signals and FSM planning)
-
 ---
 
-## Phase 2: Core Hardware Modules (Done)
+## Phase 1: Core Hardware Modules (Done)
 
 - for now (MVP of RV32I):
   - add, sub — ALU, R-type decode, register writeback
@@ -41,7 +24,7 @@
 
 ---
 
-## Phase 3: Control Logic & Integration (Done)
+## Phase 2: Control Logic & Integration (Done)
 
 - [x] **Main Control Unit:** Decodes the 7-bit opcode to generate multiplexer selectors and enable signals (e.g., `RegWrite`, `MemRead`, `MemWrite`, `Branch`)
 - [x] **ALU Control Unit:** Decodes `funct3` and `funct7` fields alongside Main Control signals to drive the specific ALUop signals
@@ -49,7 +32,7 @@
 
 ---
 
-## Phase 4: Hardware Verification & Testing (Done)
+## Phase 3: Hardware Verification & Testing (Done)
 
 - [x] **Module-Level Unit Testing (SystemVerilog):**
   - [x] ALU Testbench (Test all arithmetic/logical conditions and zero flag)
